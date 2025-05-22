@@ -16,7 +16,7 @@ public class ReadFromExcel {
 		XSSFSheet sheet = workbook.getSheet(sheetName);
 		
 		int lastRow = sheet.getLastRowNum();
-		for (int i=0; i<lastRow; i++) {
+		for (int i=0; i<=lastRow; i++) {
 			XSSFRow row = sheet.getRow(i);
 		int lastColumn = row.getLastCellNum();
 		for (int j=0; j<lastColumn; j++) {
